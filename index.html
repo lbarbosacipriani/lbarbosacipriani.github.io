@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Friend 2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+            <img src="sdv.PNG" class="logo">
+        
+          ¨&nbsp;  Friend Tip, seu amigo de viagens. 
+    </div>
+     
+        
+       
+        <div class="menu">
+        
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="quem_somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="links.html" target= "_blank" >Links</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>  
+
+        </div>
+        
+    <div class="conteudo">
+        <form action="envia_php.php" method="POST">
+
+            <h1 style="text-align:center">
+                O que vamos fazer hoje?
+            </h1>
+            <hr>
+
+            <p class="tags">
+                <h1>
+                    Selecione um lugar:
+                </h1>
+                <input class="check" type="radio" name="lugar" id="cidade" value="cidade">Quero conhecer a cidade que
+                estou.&nbsp;&nbsp;<br>
+                <input class="check" type="radio" name="lugar" id="fora" value="fora">Desejo outros Lugares
+                Maravilhosos&nbsp;&nbsp;<br>
+
+            </p>
+            <br>
+            <hr>
+
+            <h1 class="subtitulo">
+                Noite badalada
+            </h1>
+
+            <p class="tags">
+
+                <input class="check" type="checkbox" name="form[]" id="bares">Bares.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="restaurante">Restaurantes.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="boates">Boates.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="shows">Shows&nbsp;&nbsp;<br>
+            </p>
+
+            <hr />
+
+            <h1 class="subtitulo">
+                Saída Cultural
+            </h1>
+
+            <p class="tags">
+                <input class="check" type="checkbox" name="form[]" id="praia">Praia.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="museu">Curtir um Museu.&nbsp;&nbsp; <br>
+                <input class="check" type="checkbox" name="form[]" id="praca">Eventos em Praças.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="musica_vivo">Musica ao vivo.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="evento_beneficiente">Evento beneficiente.&nbsp;&nbsp;
+                <br>
+                <input class="check" type="checkbox" name="form[]" id="teatros">Teatros.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="compras">Compras.&nbsp;&nbsp;<br>
+                &nbsp;&nbsp;
+            </p>
+
+            <hr />
+
+            <h1 class="subtitulo">
+                Aventuras por ai
+            </h1>
+
+            <p class="tags">
+                <input class="check" type="checkbox" name="form[]" id="lugares_paradisiacos">Lugares paradisiacos<br>
+                <input class="check" type="checkbox" name="form[]" id="cachoeiras">Cachoeiras<br>
+                <input class="check" type="checkbox" name="form[]" id="trilhas_pela_mata">Trilhas pela mata.<br>
+                <input class="check" type="checkbox" name="form[]" id="sair_de_bike_por_ai">Sair de Bike por aí <br>
+                <input class="check" type="checkbox" name="form[]" id="explorar_novos_lugares_desertos">Explorar novos lugares desertos.<br>
+                <input class="check" type="checkbox" name="form[]" id="quero_ver_o_sol_se_por">Quero ver o melhor pôr do sol<br>
+                <input class="check" type="checkbox" name="form[]" id="vou_acampar_ninguem_me_segura">Vou acampar, ninguem me segura!<br>
+            </p>
+
+            <hr />
+
+            <h1 class="subtitulo">
+                Comidas
+            </h1>
+
+            <p class="tags">
+                <input class="check" type="checkbox" name="form[]" id="cafeterias">Cafeterias.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="padarias">Padarias&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="sorveterias">sorveterias&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="comida_italiana">Comida italiana&nbsp;&nbsp; <br>
+                <input class="check" type="checkbox" name="form[]" id="comida_japonesa">Comida Japonesa.&nbsp;&nbsp;<br>
+                <input class="check" type="checkbox" name="form[]" id="churrascarias">Churrascarias.&nbsp;&nbsp;<br>
+                <hr />
+            </p>
+            <br>
+
+            <br>
+            <h1>
+                Dados da sua Viagem
+            </h1>
+
+            <p>
+                Valor do orçamento : <input type="number" name="valor_orcamento"> <br> <br>
+                Saída: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="datetime-local" name="data_saida"> <br> <br>
+                Chegada:&nbsp;&nbsp; <input type="datetime-local" name="data_chegada"> &nbsp; <br>
+
+            </p>
+            <hr>
+            <h1>
+                Dados Pessoais
+            </h1>
+            Nome : <input type="text" id="nome"> <br>
+            Nascimento &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="data_nascimento" id="data_nascimento"><br>
+            E-mail de contato <input type="email" name="email" id="email"><br>
+            <br>
+
+            <input class="botao" type="submit" value="Finalizar e calcular o roteiro">
+            <br>
+        </form>
+        <div class="rodape">
+            rodape
+        </div>
+
+    </div>
+</body>
+
+</html>

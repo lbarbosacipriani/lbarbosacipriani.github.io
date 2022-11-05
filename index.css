@@ -1,0 +1,29 @@
+div.cabecalho{
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20pt;
+    color: darkblue;
+}
+div.menu{
+    background-color: rgb(137, 137, 165);
+    width: 10%;
+    height: 900px;
+    margin-top: -10px;
+}
+div.conteudo{
+    background-color: white;
+    width: 90%; 
+    margin-left: 11%;
+    margin-top: -910px;
+    height:100%;
+   
+    
+}
+h1{
+    font-size: 20pt;
+}
+.rodape{
+    height: 30px;
+}
