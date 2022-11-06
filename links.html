@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title> Friend 2</title>
     <link rel="stylesheet" href="index.css">
-     <script type = "text/javascript" src="pegar_gps.js"></script> 
 </head>
 
 <body>
@@ -33,10 +32,13 @@
         Pesquise uma ação que deseja saber o historico:
          <input name="stock"> <input type="submit" value="pesquisar" onclick="getLocation()">
             
-            Pesquise uma ação que deseja saber o historico: <input name="stock"> <input type="submit" name="pesquisar">
-
-
-        </div>
+         <p id="mapholder"></p>
+        </iframe>
+    </div>
+    
+<script type = "text/javascript" src="pegar_gps.js"></script> 
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    
 </body>
 
 </html>
