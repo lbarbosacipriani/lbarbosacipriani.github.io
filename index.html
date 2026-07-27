@@ -1,147 +1,218 @@
-<html>
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <title> Friend 2</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo Cipriani | Technology, AI & LLM Architecture</title>
+  <meta name="description" content="Landing page do site pessoal de Leonardo Cipriani com artigos sobre tecnologia, inteligência artificial, arquiteturas de LLM, MCP, cloud e engenharia de IA.">
+  <meta name="theme-color" content="#07111f">
+  <link rel="canonical" href="https://lbarbosacipriani.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leonardo Cipriani | Technology, AI & LLM Architecture">
+  <meta property="og:description" content="Textos e reflexões sobre IA, MCP, cloud, LLMs e engenharia de software.">
+  <meta property="og:url" content="https://lbarbosacipriani.github.io/">
+  <meta property="og:site_name" content="Leonardo Cipriani">
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="cabecalho">
-            <img src="sdv.PNG" class="logo">
-        
-          ¨&nbsp;  Friend Tip, seu amigo de viagens. 
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">LC</span>
+      <div>
+        <p class="brand-kicker">Leonardo Cipriani</p>
+        <p class="brand-subtitle">AI Engineer, writer and builder</p>
+      </div>
     </div>
-     
-        
-       
-        <div class="menu">
-        
-            <nav>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="quem_somos.html">Quem Somos?</a>
-                    </li>
-                    <li><a href="links.html" target= "_blank" >Links</a></li>
-                    <li><a href="contatos.html">Contato</a></li>
-                </ul>  
+    <nav class="nav" aria-label="Principal">
+      <a href="#artigos">Artigos</a>
+      <a href="artigos.html">Arquivo</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Tecnologia, IA e arquitetura de sistemas</p>
+        <h1 id="hero-title">Escrevendo sobre o que realmente importa na era dos LLMs.</h1>
+        <p class="hero-text">
+          Um espaço para textos sobre inteligência artificial, MCP, cloud, engenharia de IA,
+          arquiteturas de LLM e a prática de transformar pesquisa em produto.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#artigos">Ver artigos em destaque</a>
+          <a class="button button-secondary" href="#newsletter">Assinar a newsletter</a>
         </div>
-        
-    <div class="conteudo">
-        <form action="envia_php.php" method="POST">
+        <dl class="hero-metrics" aria-label="Resumo do perfil">
+          <div>
+            <dt>Foco</dt>
+            <dd>AI Engineering</dd>
+          </div>
+          <div>
+            <dt>Temas</dt>
+            <dd>LLMs, MCP, Cloud, MLOps</dd>
+          </div>
+          <div>
+            <dt>Tom</dt>
+            <dd>Prático, técnico e editorial</dd>
+          </div>
+        </dl>
+      </div>
 
-            <h1 style="text-align:center">
-                O que vamos fazer hoje?
-            </h1>
-            <hr>
+      <aside class="hero-panel" aria-label="Destaque editorial">
+        <p class="panel-label">Latest note</p>
+        <h2>Construindo produtos de IA com mais controle e menos improviso.</h2>
+        <p>
+          Textos sobre governança, observabilidade, segurança, integração com ferramentas
+          internas e como arquitetar sistemas de IA que sobrevivem ao uso real.
+        </p>
+        <ul class="panel-list">
+          <li>MCP e integração corporativa</li>
+          <li>LLMOps, MLOps e Responsible AI</li>
+          <li>Cloud architecture para produtos de IA</li>
+        </ul>
+      </aside>
+    </section>
 
-            <p class="tags">
-                <h1>
-                    Selecione um lugar:
-                </h1>
-                <input class="check" type="radio" name="lugar" id="cidade" value="cidade">Quero conhecer a cidade que
-                estou.&nbsp;&nbsp;<br>
-                <input class="check" type="radio" name="lugar" id="fora" value="fora">Desejo outros Lugares
-                Maravilhosos&nbsp;&nbsp;<br>
-
-            </p>
-            <br>
-            <hr>
-
-            <h1 class="subtitulo">
-                Noite badalada
-            </h1>
-
-            <p class="tags">
-
-                <input class="check" type="checkbox" name="form[]" id="bares">Bares.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="restaurante">Restaurantes.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="boates">Boates.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="shows">Shows&nbsp;&nbsp;<br>
-            </p>
-
-            <hr />
-
-            <h1 class="subtitulo">
-                Saída Cultural
-            </h1>
-
-            <p class="tags">
-                <input class="check" type="checkbox" name="form[]" id="praia">Praia.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="museu">Curtir um Museu.&nbsp;&nbsp; <br>
-                <input class="check" type="checkbox" name="form[]" id="praca">Eventos em Praças.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="musica_vivo">Musica ao vivo.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="evento_beneficiente">Evento beneficiente.&nbsp;&nbsp;
-                <br>
-                <input class="check" type="checkbox" name="form[]" id="teatros">Teatros.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="compras">Compras.&nbsp;&nbsp;<br>
-                &nbsp;&nbsp;
-            </p>
-
-            <hr />
-
-            <h1 class="subtitulo">
-                Aventuras por ai
-            </h1>
-
-            <p class="tags">
-                <input class="check" type="checkbox" name="form[]" id="lugares_paradisiacos">Lugares paradisiacos<br>
-                <input class="check" type="checkbox" name="form[]" id="cachoeiras">Cachoeiras<br>
-                <input class="check" type="checkbox" name="form[]" id="trilhas_pela_mata">Trilhas pela mata.<br>
-                <input class="check" type="checkbox" name="form[]" id="sair_de_bike_por_ai">Sair de Bike por aí <br>
-                <input class="check" type="checkbox" name="form[]" id="explorar_novos_lugares_desertos">Explorar novos lugares desertos.<br>
-                <input class="check" type="checkbox" name="form[]" id="quero_ver_o_sol_se_por">Quero ver o melhor pôr do sol<br>
-                <input class="check" type="checkbox" name="form[]" id="vou_acampar_ninguem_me_segura">Vou acampar, ninguem me segura!<br>
-            </p>
-
-            <hr />
-
-            <h1 class="subtitulo">
-                Comidas
-            </h1>
-
-            <p class="tags">
-                <input class="check" type="checkbox" name="form[]" id="cafeterias">Cafeterias.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="padarias">Padarias&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="sorveterias">sorveterias&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="comida_italiana">Comida italiana&nbsp;&nbsp; <br>
-                <input class="check" type="checkbox" name="form[]" id="comida_japonesa">Comida Japonesa.&nbsp;&nbsp;<br>
-                <input class="check" type="checkbox" name="form[]" id="churrascarias">Churrascarias.&nbsp;&nbsp;<br>
-                <hr />
-            </p>
-            <br>
-
-            <br>
-            <h1>
-                Dados da sua Viagem
-            </h1>
-
-            <p>
-                Valor do orçamento : <input type="number" name="valor_orcamento"> <br> <br>
-                Saída: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="date" name="data_saida"> <br> <br>
-                Chegada:&nbsp;&nbsp; <input type="date" name="data_chegada"> &nbsp; <br>
-
-            </p>
-            <hr>
-            <h1>
-                Dados Pessoais
-            </h1>
-            Nome : <input type="text" id="nome"> <br>
-            Nascimento &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="data_nascimento" id="data_nascimento"><br>
-            E-mail de contato <input type="email" name="email" id="email"><br>
-            <br>
-
-            <input class="botao" type="submit" value="Finalizar e calcular o roteiro">
-            <br>
-        </form>
-        <div class="rodape">
-            rodape
+    <section class="section" id="artigos" aria-labelledby="featured-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Artigos em destaque</p>
+          <h2 id="featured-title">Leituras recentes e ideias em desenvolvimento</h2>
         </div>
+        <p class="section-intro">
+          Uma curadoria de temas que conectam engenharia, produto e pesquisa aplicada.
+        </p>
+      </div>
 
-    </div>
+      <div class="featured-grid">
+        <article class="card card-featured">
+          <p class="card-tag">MCP</p>
+          <h3>Como desenhar um MCP Gateway para ambientes corporativos</h3>
+          <p>
+            Padrões para autenticação, autorização, isolamento de ferramentas e integração
+            com identidades corporativas como Entra ID.
+          </p>
+          <a href="artigo-mcp-gateway.html">Ler artigo</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">GenAI</p>
+          <h3>Do protótipo ao sistema: o que muda quando a IA vai para produção</h3>
+          <p>
+            Guardrails, observabilidade, avaliações e decisões de arquitetura para escalar
+            aplicações com segurança.
+          </p>
+          <a href="artigo-genai-producao.html">Ler artigo</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Cloud</p>
+          <h3>Arquiteturas cloud-native para produtos de IA</h3>
+          <p>
+            Como combinar Azure, Databricks e serviços gerenciados para acelerar times de IA
+            sem perder governança.
+          </p>
+          <a href="artigo-cloud-ai.html">Ler artigo</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="categorias" aria-labelledby="categories-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Categorias</p>
+          <h2 id="categories-title">Áreas de interesse editorial</h2>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card">
+          <h3>Inteligência Artificial</h3>
+          <p>GenAI, LLMs, agentes, avaliação, segurança e Responsible AI.</p>
+        </article>
+        <article class="category-card">
+          <h3>Arquitetura de Software</h3>
+          <p>Cloud-native, microsserviços, integrações corporativas e plataformas internas.</p>
+        </article>
+        <article class="category-card">
+          <h3>Pesquisa Aplicada</h3>
+          <p>Vision LLMs, MambaV2, computação visual e ponte entre laboratório e produção.</p>
+        </article>
+        <article class="category-card">
+          <h3>Ferramentas Open Source</h3>
+          <p>vLLM, llama.cpp, Ollama, Hugging Face, RAG e ecossistema local de LLMs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="sobre" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">Sobre</p>
+        <h2 id="about-title">Um site para compartilhar experiência técnica com clareza.</h2>
+        <p>
+          Sou Leonardo Cipriani, AI Engineer com trajetória em engenharia de software,
+          inteligência artificial aplicada e infraestrutura cloud. Este espaço reúne reflexões,
+          aprendizados e textos longos sobre como projetar sistemas de IA com consistência técnica.
+        </p>
+        <p>
+          A ideia é publicar conteúdo útil para quem trabalha com LLMs, MCP, governança,
+          integração com plataformas corporativas e construção de produtos de IA em escala.
+        </p>
+      </div>
+
+      <aside class="about-quote">
+        <p>
+          "Boas soluções de IA não são só modelos. São contexto, controle, observabilidade e
+          escolhas arquiteturais bem documentadas."
+        </p>
+      </aside>
+    </section>
+
+    <section class="section newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <p class="section-kicker">Newsletter</p>
+        <h2 id="newsletter-title">Receba novos textos e notas técnicas.</h2>
+        <p>
+          Uma lista simples para avisar sobre novos artigos, esboços de arquitetura e
+          experimentos com IA, MCP e cloud.
+        </p>
+      </div>
+
+      <form class="newsletter-form" action="mailto:lbarbosacipriani@gmail.com" method="post" enctype="text/plain">
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+        <button type="submit">Quero receber</button>
+      </form>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div>
+        <p class="section-kicker">Contato</p>
+        <h2 id="contact-title">Fale comigo sobre IA, arquitetura e colaboração editorial.</h2>
+        <p>
+          Aberto a conversas sobre artigos, projetos, palestras, parcerias técnicas e discussões
+          sobre engenharia de IA.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:lbarbosacipriani@gmail.com">lbarbosacipriani@gmail.com</a>
+        <a href="https://www.linkedin.com/in/leonardo-cipriani-br/" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/lbarbosacipriani" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Leonardo Cipriani © 2026</p>
+    <p>Technology, AI, LLM Architecture, MCP and cloud engineering.</p>
+  </footer>
 </body>
-
 </html>
