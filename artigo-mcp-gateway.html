@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como desenhar um MCP Gateway para ambientes corporativos</title>
+  <meta name="description" content="Um guia sobre MCP Gateway, Microsoft Entra ID, App Registration, autorização e segurança para LLMs corporativos.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">LC</span>
+      <div>
+        <p class="brand-kicker">Leonardo Cipriani</p>
+        <p class="brand-subtitle">Artigo</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="artigos.html">Arquivo</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="section split">
+      <div>
+        <p class="section-kicker">MCP</p>
+        <h1>Como desenhar um MCP Gateway para ambientes corporativos</h1>
+        <p>
+          O Model Context Protocol cria uma linguagem comum entre modelos e ferramentas.
+          Em ambientes corporativos, o desafio não é apenas integrar, mas controlar o contexto,
+          as permissões e a rastreabilidade.
+        </p>
+        <p>
+          Um MCP Gateway atua como camada de mediação entre LLMs e os recursos internos da empresa.
+          Ele pode centralizar autenticação com Microsoft Entra ID, mapear App Registrations por
+          serviço e aplicar políticas de autorização por ferramenta, usuário e domínio de negócio.
+        </p>
+        <p>
+          Na prática, a arquitetura precisa considerar isolamento entre ambientes, logging,
+          validação de payloads, observabilidade e limites explícitos para chamadas de ferramentas.
+          Isso evita que o modelo opere de forma irrestrita e ajuda a transformar o MCP em um
+          componente governável, e não apenas em uma ponte técnica.
+        </p>
+        <p>
+          O próximo passo é tratar o MCP Gateway como um produto interno: versionado, monitorado
+          e documentado. É isso que permite escalar o uso de LLMs sem abrir mão de segurança.
+        </p>
+      </div>
+      <aside class="about-quote">
+        <p>
+          "MCP sem governança é só integração. MCP com gateway, identidade e policy vira plataforma."
+        </p>
+      </aside>
+    </article>
+  </main>
+</body>
+</html>

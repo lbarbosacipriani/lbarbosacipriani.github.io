@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do protótipo ao sistema: o que muda quando a IA vai para produção</title>
+  <meta name="description" content="Reflexões sobre sair do protótipo e operar IA em produção com guardrails, observabilidade e avaliação.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">LC</span>
+      <div>
+        <p class="brand-kicker">Leonardo Cipriani</p>
+        <p class="brand-subtitle">Artigo</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="artigos.html">Arquivo</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="section split">
+      <div>
+        <p class="section-kicker">GenAI</p>
+        <h1>Do protótipo ao sistema: o que muda quando a IA vai para produção</h1>
+        <p>
+          Um protótipo de IA pode ser convincente mesmo com pouca estrutura. Já em produção, o
+          cenário muda: o sistema precisa lidar com custo, latência, governança, privacidade,
+          observabilidade e comportamento consistente.
+        </p>
+        <p>
+          O primeiro ajuste é abandonar a ideia de que o modelo é a aplicação. Em produção, o
+          modelo é apenas uma parte de uma cadeia maior, que inclui ingestão de contexto, regras
+          de negócio, monitoramento, fallback, avaliação e mecanismos de proteção.
+        </p>
+        <p>
+          Guardrails e políticas de Responsible AI deixam de ser preocupação teórica e passam a
+          ser parte da engenharia diária. O mesmo vale para avaliação contínua, testes com casos
+          adversariais e métricas de uso real.
+        </p>
+        <p>
+          Em resumo, o que muda não é só a escala. Muda a responsabilidade de operar uma solução
+          que precisa ser previsível, segura e auditável.
+        </p>
+      </div>
+      <aside class="about-quote">
+        <p>
+          "Quando a IA entra em produção, o problema principal deixa de ser gerar respostas e
+          passa a ser controlar o sistema que gera respostas."
+        </p>
+      </aside>
+    </article>
+  </main>
+</body>
+</html>
