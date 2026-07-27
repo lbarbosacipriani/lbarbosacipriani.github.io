@@ -132,10 +132,22 @@ main,
   transition: all 0.2s ease;
 }
 
+.nav .nav-cta {
+  color: #07111f;
+  background: linear-gradient(135deg, #76d8ff, #c3f4ff);
+  border-color: transparent;
+  font-weight: 700;
+}
+
 .nav a:hover {
   color: var(--text);
   border-color: var(--line);
   background: rgba(255, 255, 255, 0.04);
+}
+
+.nav .nav-cta:hover {
+  color: #07111f;
+  background: linear-gradient(135deg, #8de0ff, #d7f9ff);
 }
 
 .hero,
