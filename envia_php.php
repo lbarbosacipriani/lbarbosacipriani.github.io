@@ -1,31 +1,30 @@
 <?php
 
-# alterar a variavel abaixo colocando o seu email
-$destinatario = "lbarbosacipriani@gmail.com";
-$valor = $_REQUEST['valor'];
-$email = $_REQUEST['dia_saida'];
-$mensagem = $_REQUEST['dia_chegada'];
-$valor_orcamento=$_REQUEST['']
-// Noite badalada
-$form=$_REQUEST['form'];
+declare(strict_types=1);
 
+// Endpoint legado mantido apenas para compatibilidade com formulários antigos.
+$destinatario = 'lbarbosacipriani@gmail.com';
 
- // monta o e-mail na variavel $body
- for($i = 0; $i < count($form); $i++) {
-    $body = $body . $form[$i] . "; ";
-  }
-$body = $body . "Valor do orcamento: " . $valor_orcamento . "\n";
-$body = $body . "Data de saida : " . $data_saida . "\n";
-$body = $body . "Data de chegada: " . $data_chegada . "\n";
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: index.html', true, 303);
+    exit;
+}
 
-$body = $body . "Nome: " . $nome . "\n";
-$body = $body . "Nascimento: " . $data_nascimento . "\n";
-$body = $body . "Email: " . $email . "\n";
+$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) ?: '';
+$form = filter_input(INPUT_POST, 'form', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY) ?: [];
+$valor = trim((string) ($_POST['valor'] ?? ''));
+$dataSaida = trim((string) ($_POST['dia_saida'] ?? ''));
+$dataChegada = trim((string) ($_POST['dia_chegada'] ?? ''));
 
-// envia o email
-$subject="sugestao de viagens";
-mail($destinatario,$subject, $body);
-// redireciona para a página de obrigado
-header("location:index.html");
+$body = implode('; ', array_map('trim', $form));
+$body .= "\nValor do orçamento: {$valor}";
+$body .= "\nData de saída: {$dataSaida}";
+$body .= "\nData de chegada: {$dataChegada}";
+$body .= "\nE-mail: {$email}";
 
-?>
+if ($email !== '') {
+    mail($destinatario, 'Sugestão de viagens', $body, "Reply-To: {$email}");
+}
+
+header('Location: index.html', true, 303);
+exit;

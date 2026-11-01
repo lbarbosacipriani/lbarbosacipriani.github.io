@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resenhas de Papers | Leonardo Cipriani</title>
+  <meta name="description" content="Resenhas e notas de leitura sobre papers de inteligência artificial, machine learning e arquitetura de LLMs.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">LC</span>
+      <div>
+        <p class="brand-kicker">Leonardo Cipriani</p>
+        <p class="brand-subtitle">Notas de leitura</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="artigos.html">Artigos</a>
+      <a class="nav-cta" href="resenhas.html" aria-current="page">Resenhas</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="section split" aria-labelledby="reviews-title">
+      <div>
+        <p class="section-kicker">Leitura crítica</p>
+        <h1 id="reviews-title">Resenhas de papers para entender ideias que mudaram a área.</h1>
+        <p>
+          Um arquivo de notas curtas sobre artigos que ajudam a explicar a evolução dos modelos,
+          dos dados e das arquiteturas de inteligência artificial. A proposta é registrar a ideia
+          central, o que permanece relevante e onde estão as limitações.
+        </p>
+      </div>
+      <aside class="about-quote">
+        <p>“Ler um paper é entender não apenas o resultado, mas também as escolhas que tornaram o resultado possível.”</p>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="reading-list-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Lista inicial</p>
+          <h2 id="reading-list-title">Papers para começar</h2>
+        </div>
+        <p class="section-intro">Uma trilha que parte do Transformer e chega às discussões atuais sobre escala, eficiência e alinhamento.</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="card card-featured">
+          <p class="card-tag">01 · Arquitetura</p>
+          <h3>Attention Is All You Need</h3>
+          <p><strong>Vaswani et al. · 2017</strong></p>
+          <p>O paper que apresenta o Transformer: uma arquitetura baseada em atenção, sem recorrência nem convoluções. A contribuição mais duradoura é separar a modelagem de dependências da ordem sequencial de processamento.</p>
+          <a href="https://arxiv.org/abs/1706.03762" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">02 · Representações</p>
+          <h3>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</h3>
+          <p><strong>Devlin et al. · 2018</strong></p>
+          <p>Mostra como representações bidirecionais pré-treinadas podem ser adaptadas a várias tarefas com uma camada adicional. É uma boa porta de entrada para entender pré-treinamento e fine-tuning.</p>
+          <a href="https://arxiv.org/abs/1810.04805" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">03 · Escala</p>
+          <h3>Language Models are Few-Shot Learners</h3>
+          <p><strong>Brown et al. · 2020</strong></p>
+          <p>Investiga o efeito da escala no GPT-3 e o uso de exemplos no próprio prompt, sem atualização de gradientes. Também é importante pelas limitações metodológicas e pelos impactos discutidos no artigo.</p>
+          <a href="https://arxiv.org/abs/2005.14165" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">04 · Eficiência</p>
+          <h3>Chinchilla: Training Compute-Optimal Large Language Models</h3>
+          <p><strong>Hoffmann et al. · 2022</strong></p>
+          <p>Reavalia a relação entre tamanho do modelo, quantidade de dados e orçamento de treinamento. A principal lição é que modelos menores, treinados com mais dados, podem ser mais eficientes.</p>
+          <a href="https://arxiv.org/abs/2203.15556" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">05 · Modelos abertos</p>
+          <h3>LLaMA: Open and Efficient Foundation Language Models</h3>
+          <p><strong>Touvron et al. · 2023</strong></p>
+          <p>Explora modelos de fundação menores treinados com grandes volumes de dados públicos. O paper ajuda a discutir eficiência, reprodutibilidade e o papel de modelos abertos no ecossistema.</p>
+          <a href="https://arxiv.org/abs/2302.13971" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">06 · Alinhamento</p>
+          <h3>Training language models to follow instructions with human feedback</h3>
+          <p><strong>Ouyang et al. · 2022</strong></p>
+          <p>Apresenta o InstructGPT e uma abordagem baseada em demonstrações humanas, preferências e aprendizado por reforço. É uma referência para discutir alinhamento como processo de produto e avaliação.</p>
+          <a href="https://arxiv.org/abs/2203.02155" rel="noopener noreferrer">Ler o paper no arXiv</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Leonardo Cipriani © 2026</p>
+    <p>Notas de leitura sobre IA, LLMs e arquitetura.</p>
+  </footer>
+</body>
+</html>
