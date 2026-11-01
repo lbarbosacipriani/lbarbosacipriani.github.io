@@ -1,32 +1,34 @@
 
-var x = document.getElementById("demo");
+"use strict";
+
+const status = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
   } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    showMessage("A geolocalização não é suportada por este navegador.");
   }
 }
     
  
 function showPosition(position)
   {
-  lat=position.coords.latitude;
-  lon=position.coords.longitude;
-  latlon=new google.maps.LatLng(lat, lon)
-  mapholder=document.getElementById('mapholder')
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const latlon = new google.maps.LatLng(lat, lon);
+  const mapholder = document.getElementById('mapholder');
   mapholder.style.height='50%';
   mapholder.style.width='100%';
  
-  var myOptions={
+  const myOptions={
   center:latlon,zoom:14,
   mapTypeId:google.maps.MapTypeId.ROADMAP,
   mapTypeControl:false,
   navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
   };
-  var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
-  var marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
+  const map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
+  new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
   }
  
  
@@ -35,19 +37,26 @@ function showPosition(position)
   switch(error.code) 
     {
     case error.PERMISSION_DENIED:
-      x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+      showMessage("Usuário rejeitou a solicitação de geolocalização.");
       break;
     case error.POSITION_UNAVAILABLE:
-      x.innerHTML="Localização indisponível."
+      showMessage("Localização indisponível.");
       break;
     case error.TIMEOUT:
-      x.innerHTML="O tempo da requisição expirou."
+      showMessage("O tempo da requisição expirou.");
       break;
     case error.UNKNOWN_ERROR:
-      x.innerHTML="Algum erro desconhecido aconteceu."
+      showMessage("Algum erro desconhecido aconteceu.");
       break;
     }
   }
+
+function showMessage(message) {
+  const target = status || document.getElementById("mapholder");
+  if (target) {
+    target.textContent = message;
+  }
+}
 
 
 
